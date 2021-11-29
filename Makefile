@@ -7,4 +7,5 @@ vehicle.o: headers/vehicle.h sources/vehicle.cpp
 derivedclasses.o: headers/vehicle.h headers/derivedclasses.h sources/derivedclasses.cpp
 	g++ -c sources/derivedclasses.cpp
 
-targetDir = bin
+clean:
+	rm -f *.o 
